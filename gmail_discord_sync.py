@@ -82,7 +82,7 @@ def get_gmail_service():
 
 
 def get_last_check_time() -> datetime:
-    """Get the last check time from file, or default to 24 hour ago"""
+    """Get the last check time from file, or default to 1 hour ago"""
     try:
         if os.path.exists('last_check.txt'):
             with open('last_check.txt', 'r') as f:
@@ -92,7 +92,7 @@ def get_last_check_time() -> datetime:
         print(f"Could not read last check time: {e}")
     
     # Default to 24 hour ago
-    return datetime.now() - timedelta(hours=24)
+    return datetime.now() - timedelta(hours=1)
 
 
 def save_last_check_time():

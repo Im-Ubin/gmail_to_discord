@@ -1,21 +1,23 @@
 # 📧 Gmail to Discord
+**An open-source tool that automatically categorizes and forwards Gmail messages to Discord channels based on keywords.**
 
-An open-source tool that automatically categorizes and forwards Gmail messages to Discord channels based on keywords.
-
----
+<br/>
 
 ### ✨ Features
-
-> 🔍 **Keyword-based Filtering**: Automatically categorize emails based on subject and sender <br/>
-> 📊 **Multi-channel Support**: Send to multiple channels if email matches multiple keywords <br/>
-> 🎨 **Color Coding**: Visual distinction with different colors per category <br/>
-> 🤖 **Automated**: Runs automatically at customizable intervals via GitHub Actions <br/>
+- 🔍 **Keyword-based Filtering**: Automatically categorize emails based on subject and sender <br/>
+- 📊 **Multi-channel Support**: Send to multiple channels if email matches multiple keywords <br/>
+- 🎨 **Color Coding**: Visual distinction with different colors per category <br/>
+- 🤖 **Automated**: Runs automatically at customizable intervals via GitHub Actions <br/>
 
 ### 📋 Prerequisites
 
 - GitHub account
 - Google account (Gmail)
 - Discord server admin permissions
+
+---
+
+<br/>
 
 ### 🚀 Setup Instructions
 
@@ -31,7 +33,9 @@ An open-source tool that automatically categorizes and forwards Gmail messages t
 6. Application type: **Desktop app**
 7. Download `credentials.json`
 
-#### Step 3: Create Discord Webhooks
+<br/>
+
+#### Step 3: Create Discord Webhooks 
 
 Create a webhook for each Discord channel:
 
@@ -45,6 +49,8 @@ Example channel setup:
 - `#shipping` - Delivery tracking
 - `#newsletters` - Subscription newsletters
 - `#misc` - Uncategorized emails
+
+<br/>
 
 #### Step 4: Configure Settings
 
@@ -79,6 +85,8 @@ cp config.example.json config.json
 - `red`, `green`, `blue`, `yellow`, `purple`, `orange`, `pink`, `teal`, `default`
 - Or hex color codes (e.g., `#DE5733`)
 
+<br/>
+
 #### Step 5: Gmail Authentication
 
 1. Set up Python environment:
@@ -95,6 +103,8 @@ python gmail_discord_sync.py
 4. Grant permissions
 5. `token.json` file will be created
 
+<br/>
+
 #### Step 6: Configure GitHub Secrets
 
 1. Go to your GitHub repository → **Settings** → **Secrets and variables** → **Actions**
@@ -102,10 +112,16 @@ python gmail_discord_sync.py
 3. Name: `GMAIL_CREDENTIALS`
 4. Value: Copy and paste entire contents of `token.json`
 
+<br/>
+
 #### Step 7: Upload config.json
 
 **⚠️ Warning**: Never upload `credentials.json` or `token.json` to GitHub!
 (Already included in `.gitignore`)
+
+---
+
+<br/>
 
 ### ⚙️ Changing Run Frequency
 
@@ -184,6 +200,10 @@ schedule:
   ]
 }
 ```
+
+---
+
+<br/>
 
 ### 🔧 Troubleshooting
 

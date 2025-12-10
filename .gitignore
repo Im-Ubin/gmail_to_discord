@@ -29,7 +29,6 @@ token.json
 config.json
 
 # Runtime files
-last_check.txt
 *.log
 
 # IDE

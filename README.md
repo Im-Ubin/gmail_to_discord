@@ -3,6 +3,26 @@
 
 <br/>
 
+### ⚠️ IMPORTANT: Security Notice
+**This project handles sensitive data. You MUST use a Private repository!**
+
+- ✅ Use "Use this template" button and select Private
+- ✅ Or manually create a new Private repository
+- ❌ DO NOT Fork - Forks are public by default!
+
+
+Your repository will contain:
+- Gmail access credentials
+- Discord webhook URLs
+
+**Always keep your repository Private.**
+
+<br/>
+
+---
+
+<br/>
+
 ### ✨ Features
 - 🔍 **Keyword-based Filtering**: Automatically categorize emails based on subject and sender <br/>
 - 📊 **Multi-channel Support**: Send to multiple channels if email matches multiple keywords <br/>
@@ -14,6 +34,8 @@
 - GitHub account
 - Google account (Gmail)
 - Discord server admin permissions
+
+<br/>
 
 ---
 
@@ -118,8 +140,6 @@ python gmail_discord_sync.py
 
 **⚠️ Warning**: Never upload `credentials.json` or `token.json` to GitHub!
 (Already included in `.gitignore`)
-
----
 
 <br/>
 

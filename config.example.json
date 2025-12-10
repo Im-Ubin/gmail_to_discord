@@ -1,0 +1,31 @@
+{
+  "keywords": [
+    {
+      "keywords": ["payment", "paid", "invoice"],
+      "webhook": "https://discord.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_TOKEN",
+      "color": "green"
+    },
+    {
+      "keywords": ["delivery", "shipping", "tracking"],
+      "webhook": "https://discord.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_TOKEN",
+      "color": "blue"
+    },
+    {
+      "keywords": ["refund", "cancel"],
+      "webhook": "https://discord.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_TOKEN",
+      "color": "red"
+    },
+    {
+      "keywords": ["github", "gitlab"],
+      "webhook": "https://discord.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_TOKEN",
+      "color": "purple"
+    },
+    {
+      "keywords": ["newsletter", "notification"],
+      "webhook": "https://discord.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_TOKEN",
+      "color": "yellow"
+    }
+  ],
+  "default_webhook": "https://discord.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_TOKEN",
+  "default_color": "default"
+}

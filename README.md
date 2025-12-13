@@ -1,7 +1,10 @@
 # 📧 Gmail to Discord
 **An open-source tool that automatically categorizes and forwards Gmail messages to Discord channels based on keywords.**
 
-<br/>
+<img width="706" height="455" alt="image" src="https://github.com/user-attachments/assets/44bce5a9-e423-48e3-a029-f1aed506befa" />
+
+
+<br/><br/>
 
 ### ⚠️ IMPORTANT: Security Notice
 **This project handles sensitive data. You MUST use a Private repository!**
